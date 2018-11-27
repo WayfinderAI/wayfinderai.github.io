@@ -7,7 +7,7 @@ keywords:
 title: Wayfinder Synbio Technologies
 description: Synthetic biology could reshape the global industrial landscape, creating opportunities and challenges for the world.
 buttons:
-  - content: Button
+  - content: Get Started
     url: "#"
     external_url: false
   - icon: github
