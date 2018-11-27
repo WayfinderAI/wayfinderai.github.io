@@ -31,7 +31,7 @@ grid_navigation:
 
     # Grid navigation
 grid_navigation:
-  - title: Grid navigation
+  - title: New Grid navigation
     excerpt: Section description
     cta: Read more
     url: "#"
