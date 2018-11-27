@@ -28,35 +28,294 @@ page_nav:
     url: "#"
 ---
 
-Synthetic biology could reshape the global industrial landscape, creating opportunities and challenges for Australian firms, according to a new report from the Australian Council of Learned Academies (ACOLA).
+S<div class="content">
+<h2 id="what-is-doks"><a href="#what-is-doks" class="title-anchor-link">#</a> What is Doks?</h2>
 
-Synthetic biology in Australia: an outlook to 2030 examines the prospects for a fast-evolving field characterised by bold thinking and interdisciplinary research. Broadly defined, synthetic biology involves the application of engineering principles to biology to produce new and improved products and services, to manufacture substances that are difficult to synthesise by traditional techniques, and to harvest sustainably from nature. Examples include a low-emissions method of making jet fuel or the anti-malarial compound artemisinin.
+<p>Doks is <a href="https://jekyllrb.com/">Jekyll</a> theme created for project documentations.<br>
+You can use it with <a href="https://pages.github.com/">GitHub</a> and <a href="https://about.gitlab.com/features/pages/">GitLab Pages</a> as well as a standalone project.</p>
 
-The report analyses the opportunities across areas critical to Australia, including: health and medicine; industry and energy; agriculture and food, and; environment and biocontrol. The report also explores the human concerns raised by the technology, highlighting the importance of an adaptable and responsive regulatory system to guide responsible advancement.
+<h2 id="what-is-jekyll"><a href="#what-is-jekyll" class="title-anchor-link">#</a> What is Jekyll?</h2>
+<p><a href="https://jekyllrb.com/">Jekyll</a> is a simple, blog-aware, static site generator. It takes a template directory containing raw text files in various formats, runs it through a converter (like <a href="https://daringfireball.net/projects/markdown/">Markdown</a>) and <a href="https://github.com/Shopify/liquid/wiki">Liquid</a> renderer, and spits out a complete, ready-to-publish static website suitable for serving with your favourite web server.</p>
 
-“Synthetic biology offers immense potential to transform industry and deliver significant benefits for Australia. Its development will require strategic investment and a skilled workforce which can integrate the essential ethical, legal and social aspects of synthetic biology into the research and innovation process from its earliest stages,” said the chair of the ACOLA expert working group, Professor Peter Gray.
+<div class="callout callout--info">
+    <p><strong>Full Jekyll documentation</strong> You can find full Jekyll documentation <a href="https://jekyllrb.com/docs/home/" target="blank">here</a>.</p>
+</div>
 
-The report makes six findings that highlight the opportunities presented by synthetic biology and the steps needed to maximise the economic and societal benefits. These include building on areas of existing capability, improved research translation, proactive public communication, a workforce skilled in both HASS and STEM disciplines, and an integrated national infrastructure platform. Without a broad-reaching national implementation strategy for synthetic biology, and strategic investments in education and infrastructure, Australia will fall behind other leading nations. These, together with an inclusive ethical and social framework, and a strengthened culture of technology development and commercialisation, will provide Australia with significant benefits.
+<h2 id="install-jekyll"><a href="#install-jekyll" class="title-anchor-link">#</a> Install Jekyll</h2>
+<h3 id="requirements"><a href="#requirements" class="title-anchor-link">#</a> Requirements</h3>
+<p>Installing Jekyll should be straight-forward if all requirements are met. Before you start, make sure your system has the following:</p>
 
-Australia’s Chief Scientist Dr Alan Finkel, who commissioned the report on behalf of the Commonwealth Science Council, urged policymakers to reflect on the questions it raises.
+<ul>
+  <li>GNU/Linux, Unix, or macOS</li>
+  <li><a href="https://www.ruby-lang.org/en/downloads/">Ruby</a> version 2.0 or above, including all development headers</li>
+  <li><a href="https://rubygems.org/pages/download">RubyGems</a></li>
+  <li><a href="https://gcc.gnu.org/install/">GCC</a> and <a href="https://www.gnu.org/software/make/">Make</a> (in case your system doesn’t have them installed, which you can check by running <code class="highlighter-rouge">gcc -v</code> and <code class="highlighter-rouge">make -v</code> in your system’s command line interface)</li>
+</ul>
 
-“The possibilities of synthetic biology are limitless,” Dr Finkel said. “The question for Australians is which avenues to pursue, and how to do so in a manner that earns consumers’ trust.”
+<h3 id="install-with-rubygems"><a href="#install-with-rubygems" class="title-anchor-link">#</a> Install with RubyGems</h3>
+<p>The best way to install Jekyll is via <a href="https://rubygems.org/pages/download">RubyGems</a>. At the terminal prompt, simply run the following command to install Jekyll:</p>
 
-This is the third in ACOLA’s Horizon Scanning series. ‘These interdisciplinary reports provide credible and well-considered evidence to guide opportunities and inform policy on issues ranging from the technological change and sustainability to international competitiveness and the economy’ Professor Glenn Withers, ACOLA President, said.
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>gem install jekyll
+</code></pre></div></div>
 
-The report, funded by the CSIRO and the Federal Department of Health, is available at www.acola.org.au
+<p>All of Jekyll’s gem dependencies are automatically installed by the above command, so you won’t have to worry about them at all.</p>
 
-Expert Working Group
-Professor Peter Gray AO FTSE (Chair)
-Dr Sue Meek AO FTSE (Deputy Chair)
-Professor Paul Griffiths FAHA
-Professor Joseph Trapani FAHMS
-Professor Ian Small FAA
-Associate Professor Claudia Vickers
-Professor Catherine Waldby FASSA
-Home
-About
-Research
-News
-Resources and information
-Contact us
+<div class="callout callout--info">
+    <p><strong>Full Jekyll installation guide</strong> You can find full Jekyll installation guide <a href="https://jekyllrb.com/docs/installation/" target="blank">here</a>.</p>
+</div>
+
+<h2 id="install-doks"><a href="#install-doks" class="title-anchor-link">#</a> Install Doks</h2>
+<h3 id="download"><a href="#download" class="title-anchor-link">#</a> Download</h3>
+<p>Download your Doks theme from ThemeForest (you should get <code class="highlighter-rouge">doks.zip</code>) and unzip it.</p>
+
+<h3 id="start-development-server"><a href="#start-development-server" class="title-anchor-link">#</a> Start development server</h3>
+<p>Jekyll comes with a built-in development server that will allow you to preview what the generated site will look like in your browser locally.</p>
+
+<p>You can run this commands inside theme folder:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>jekyll serve
+<span class="c"># A development server will run at http://localhost:4000/</span>
+<span class="c"># Auto-regeneration: enabled. Use `--no-watch` to disable.</span>
+
+<span class="nv">\$ </span>jekyll serve <span class="nt">--no-watch</span>
+<span class="c"># Same as `jekyll serve` but will not watch for changes.</span>
+
+<span class="nv">\$ </span>jekyll serve <span class="nt">--detach</span>
+<span class="c"># Same as `jekyll serve` but will detach from the current terminal.</span>
+<span class="c"># If you need to kill the server, you can `kill -9 1234` where "1234" is the PID.</span>
+<span class="c"># If you cannot find the PID, then do, `ps aux | grep jekyll` and kill the instance.</span>
+</code></pre></div></div>
+
+<h2 id="directory-structure"><a href="#directory-structure" class="title-anchor-link">#</a> Directory structure</h2>
+<p>This is Doks basic directory structure which looks like this:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>doks/
+├── doks-theme/ <span class="c"># Doks theme source files.</span>
+├── _config.yml <span class="c"># Stores Jekyll configuration data.</span>
+├── .eslintrc <span class="c"># ESlint configuration file.</span>
+├── .gitignore <span class="c"># Git related file which specifies intentionally untracked files to ignore.</span>
+├── .gitlab-ci.yml <span class="c"># File used by GitLab Runner to manage your project's jobs.</span>
+├── .htaccess <span class="c"># Configuration file for use on web servers running the Apache Web Server software.</span>
+├── 404.md <span class="c"># Error 404 layout markdown template.</span>
+├── default.md <span class="c"># Default layout markdown template.</span>
+├── favicon.ico <span class="c"># Favicon icon.</span>
+└── index.md <span class="c"># Homepage layout markdown template.</span>
+</code></pre></div></div>
+
+<h2 id="icons"><a href="#icons" class="title-anchor-link">#</a> Icons</h2>
+<p>List of icons you can use in some places such as social list in footer or buttons in homepage layout.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">Icon name</th>
+      <th style="text-align: left">YML name</th>
+      <th style="text-align: left">Preview</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">Behance</td>
+      <td style="text-align: left"><code class="highlighter-rouge">behance</code></td>
+      <td style="text-align: left"><i class="icon icon--behance" style="font-size: 25px;"></i></td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Bitbucket</td>
+      <td style="text-align: left"><code class="highlighter-rouge">bitbucket</code></td>
+      <td style="text-align: left"><i class="icon icon--bitbucket" style="font-size: 25px;"></i></td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Codepen</td>
+      <td style="text-align: left"><code class="highlighter-rouge">codepen</code></td>
+      <td style="text-align: left"><i class="icon icon--codepen" style="font-size: 25px;"></i></td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Dribbble</td>
+      <td style="text-align: left"><code class="highlighter-rouge">dribbble</code></td>
+      <td style="text-align: left"><i class="icon icon--dribbble" style="font-size: 25px;"></i></td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Dropbox</td>
+      <td style="text-align: left"><code class="highlighter-rouge">dropbox</code></td>
+      <td style="text-align: left"><i class="icon icon--dropbox" style="font-size: 25px;"></i></td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Facebook</td>
+      <td style="text-align: left"><code class="highlighter-rouge">facebook</code></td>
+      <td style="text-align: left"><i class="icon icon--facebook" style="font-size: 25px;"></i></td>
+    </tr>
+    <tr>
+      <td style="text-align: left">GitHub</td>
+      <td style="text-align: left"><code class="highlighter-rouge">github</code></td>
+      <td style="text-align: left"><i class="icon icon--github" style="font-size: 25px;"></i></td>
+    </tr>
+    <tr>
+      <td style="text-align: left">GitLab</td>
+      <td style="text-align: left"><code class="highlighter-rouge">gitlab</code></td>
+      <td style="text-align: left"><i class="icon icon--gitlab" style="font-size: 25px;"></i></td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Google Plus</td>
+      <td style="text-align: left"><code class="highlighter-rouge">google-plus</code></td>
+      <td style="text-align: left"><i class="icon icon--google-plus" style="font-size: 25px;"></i></td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Gulp</td>
+      <td style="text-align: left"><code class="highlighter-rouge">gulp</code></td>
+      <td style="text-align: left"><i class="icon icon--gulp" style="font-size: 25px;"></i></td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Instagram</td>
+      <td style="text-align: left"><code class="highlighter-rouge">instagram</code></td>
+      <td style="text-align: left"><i class="icon icon--instagram" style="font-size: 25px;"></i></td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Kickstarter</td>
+      <td style="text-align: left"><code class="highlighter-rouge">kickstarter</code></td>
+      <td style="text-align: left"><i class="icon icon--kickstarter" style="font-size: 25px;"></i></td>
+    </tr>
+    <tr>
+      <td style="text-align: left">LinkedIn</td>
+      <td style="text-align: left"><code class="highlighter-rouge">linkedin</code></td>
+      <td style="text-align: left"><i class="icon icon--linkedin" style="font-size: 25px;"></i></td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Medium</td>
+      <td style="text-align: left"><code class="highlighter-rouge">medium</code></td>
+      <td style="text-align: left"><i class="icon icon--medium" style="font-size: 25px;"></i></td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Meetup</td>
+      <td style="text-align: left"><code class="highlighter-rouge">meetup</code></td>
+      <td style="text-align: left"><i class="icon icon--meetup" style="font-size: 25px;"></i></td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Pocket</td>
+      <td style="text-align: left"><code class="highlighter-rouge">pocket</code></td>
+      <td style="text-align: left"><i class="icon icon--pocket" style="font-size: 25px;"></i></td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Product Hunt</td>
+      <td style="text-align: left"><code class="highlighter-rouge">producthunt</code></td>
+      <td style="text-align: left"><i class="icon icon--producthunt" style="font-size: 25px;"></i></td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Reddit</td>
+      <td style="text-align: left"><code class="highlighter-rouge">reddit</code></td>
+      <td style="text-align: left"><i class="icon icon--reddit" style="font-size: 25px;"></i></td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Skype</td>
+      <td style="text-align: left"><code class="highlighter-rouge">skype</code></td>
+      <td style="text-align: left"><i class="icon icon--skype" style="font-size: 25px;"></i></td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Slack</td>
+      <td style="text-align: left"><code class="highlighter-rouge">slack</code></td>
+      <td style="text-align: left"><i class="icon icon--slack" style="font-size: 25px;"></i></td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Stack Overflow</td>
+      <td style="text-align: left"><code class="highlighter-rouge">stackoverflow</code></td>
+      <td style="text-align: left"><i class="icon icon--stackoverflow" style="font-size: 25px;"></i></td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Trello</td>
+      <td style="text-align: left"><code class="highlighter-rouge">trello</code></td>
+      <td style="text-align: left"><i class="icon icon--trello" style="font-size: 25px;"></i></td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Tumblr</td>
+      <td style="text-align: left"><code class="highlighter-rouge">tumblr</code></td>
+      <td style="text-align: left"><i class="icon icon--tumblr" style="font-size: 25px;"></i></td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Twitter</td>
+      <td style="text-align: left"><code class="highlighter-rouge">twitter</code></td>
+      <td style="text-align: left"><i class="icon icon--twitter" style="font-size: 25px;"></i></td>
+    </tr>
+    <tr>
+      <td style="text-align: left">YouTube</td>
+      <td style="text-align: left"><code class="highlighter-rouge">youtube</code></td>
+      <td style="text-align: left"><i class="icon icon--youtube" style="font-size: 25px;"></i></td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Arrow down</td>
+      <td style="text-align: left"><code class="highlighter-rouge">arrow-down</code></td>
+      <td style="text-align: left"><i class="icon icon--arrow-down" style="font-size: 25px;"></i></td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Arrow left</td>
+      <td style="text-align: left"><code class="highlighter-rouge">arrow-left</code></td>
+      <td style="text-align: left"><i class="icon icon--arrow-left" style="font-size: 25px;"></i></td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Arrow right</td>
+      <td style="text-align: left"><code class="highlighter-rouge">arrow-right</code></td>
+      <td style="text-align: left"><i class="icon icon--arrow-right" style="font-size: 25px;"></i></td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Arrow up</td>
+      <td style="text-align: left"><code class="highlighter-rouge">arrow-up</code></td>
+      <td style="text-align: left"><i class="icon icon--arrow-up" style="font-size: 25px;"></i></td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Chevron down</td>
+      <td style="text-align: left"><code class="highlighter-rouge">chevron-down</code></td>
+      <td style="text-align: left"><i class="icon icon--chevron-down" style="font-size: 25px;"></i></td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Chevron left</td>
+      <td style="text-align: left"><code class="highlighter-rouge">chevron-left</code></td>
+      <td style="text-align: left"><i class="icon icon--chevron-left" style="font-size: 25px;"></i></td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Chevron right</td>
+      <td style="text-align: left"><code class="highlighter-rouge">chevron-right</code></td>
+      <td style="text-align: left"><i class="icon icon--chevron-right" style="font-size: 25px;"></i></td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Chevron up</td>
+      <td style="text-align: left"><code class="highlighter-rouge">chevron-up</code></td>
+      <td style="text-align: left"><i class="icon icon--chevron-up" style="font-size: 25px;"></i></td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Home</td>
+      <td style="text-align: left"><code class="highlighter-rouge">home</code></td>
+      <td style="text-align: left"><i class="icon icon--home" style="font-size: 25px;"></i></td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Maximize</td>
+      <td style="text-align: left"><code class="highlighter-rouge">maximize</code></td>
+      <td style="text-align: left"><i class="icon icon--maximize" style="font-size: 25px;"></i></td>
+    </tr>
+    <tr>
+      <td style="text-align: left">X (Close)</td>
+      <td style="text-align: left"><code class="highlighter-rouge">x</code></td>
+      <td style="text-align: left"><i class="icon icon--x" style="font-size: 25px;"></i></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="change-log"><a href="#change-log" class="title-anchor-link">#</a> Change Log</h2>
+<p>All notable changes to this project will be documented here.
+This project adheres to <a href="http://semver.org/">Semantic Versioning</a>.</p>
+
+<h3 id="v100---2017-12-08"><a href="#v100---2017-12-08" class="title-anchor-link">#</a> [v1.0.0] - 2017-12-08</h3>
+<p>Initial release.</p>
+
+<h2 id="credits"><a href="#credits" class="title-anchor-link">#</a> Credits</h2>
+<p>List of vendor assets we used to create this theme:</p>
+<ul>
+  <li><a href="https://github.com/twbs/bootstrap">Bootstrap</a> (<a href="https://github.com/twbs/bootstrap/blob/master/LICENSE">MIT License</a>)</li>
+  <li><a href="https://github.com/necolas/normalize.css">normalize.css</a> (<a href="https://github.com/necolas/normalize.css/blob/master/LICENSE.md">MIT License</a>)</li>
+  <li><a href="http://jquery.com">jQuery</a> (<a href="https://tldrlegal.com/license/mit-license">MIT License</a>)</li>
+  <li><a href="https://github.com/liabru/jquery-match-height">jquery-match-height</a> (<a href="https://github.com/liabru/jquery-match-height/blob/master/LICENSE">MIT License</a>)</li>
+  <li><a href="https://github.com/simple-icons/simple-icons">simple-icons</a> (<a href="https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md">CC0-1.0 License</a>)</li>
+  <li><a href="https://github.com/colebemis/feather">feather</a> (<a href="https://github.com/colebemis/feather/blob/master/LICENSE">MIT License</a>)</li>
+  <li><a href="https://fonts.google.com/specimen/Montserrat">Montserrat</a> (<a href="http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&amp;id=OFL">SIL Open Font License, 1.1</a>)</li>
+  <li><a href="https://fonts.google.com/specimen/Noto+Sans">Noto Sans</a> (<a href="http://www.apache.org/licenses/LICENSE-2.0.html">Apache License, version 2.0</a>)</li>
+  <li><a href="https://fonts.google.com/specimen/Source+Code+Pro">Source Code Pro</a> (<a href="http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&amp;id=OFL">SIL Open Font License, 1.1</a>)</li>
+</ul>
+
+    					</div>
